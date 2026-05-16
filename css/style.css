@@ -43,7 +43,7 @@ main{max-width:var(--container);margin:0 auto;padding:48px 20px 90px}.hero-secti
   padding:44px;
   background:
           linear-gradient(120deg,rgba(15,23,42,.78),rgba(15,23,42,.36)),
-          url("../assets/building_sketch.webp") right bottom/62% auto no-repeat,
+          /*url("../assets/building_sketch.webp") right bottom/62% auto no-repeat,*/
           linear-gradient(135deg,#eaf2f6,#ffffff);
   color:#fff;
   box-shadow:var(--shadow);
@@ -937,7 +937,7 @@ body{
 .presentation-hero-copy{
   background:
     linear-gradient(120deg,rgba(15,23,42,.88),rgba(15,23,42,.52) 58%,rgba(43,117,151,.18)),
-    url("../assets/building_sketch.webp") right bottom/60% auto no-repeat,
+    /*url("../assets/building_sketch.webp") right bottom/60% auto no-repeat,*/
     linear-gradient(135deg,#eaf2f6,#ffffff);
 }
 
@@ -1085,7 +1085,7 @@ body{
     padding:28px 22px;
     background:
       linear-gradient(120deg,rgba(15,23,42,.9),rgba(15,23,42,.66)),
-      url("../assets/building_sketch.webp") right bottom/86% auto no-repeat,
+      /*url("../assets/building_sketch.webp") right bottom/86% auto no-repeat,*/
       linear-gradient(135deg,#eaf2f6,#ffffff);
   }
 
@@ -1252,4 +1252,9 @@ body{
     padding:26px 20px !important;
     border-radius:22px !important;
   }
+}
+
+.reference-switch-card.active{
+  outline:3px solid rgba(43,117,151,.55);
+  outline-offset:3px;
 }

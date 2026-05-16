@@ -70,6 +70,18 @@ if (referenceButtons.length && referenceFeatured) {
         item.classList.toggle('active', isActive);
         item.setAttribute('aria-pressed', String(isActive));
       });
+
+      const isMobile = window.matchMedia('(max-width: 700px)').matches;
+      if (isMobile) {
+        const header = document.querySelector('.site-header');
+        const headerOffset = header ? header.offsetHeight + 18 : 18;
+        const targetTop = referenceFeatured.getBoundingClientRect().top + window.scrollY - headerOffset;
+
+        window.scrollTo({
+          top: targetTop,
+          behavior: 'smooth'
+        });
+      }
     });
   });
 }
